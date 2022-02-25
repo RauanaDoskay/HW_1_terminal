@@ -1,0 +1,53 @@
+Первое ДЗ 
+Linux terminal (GitBash) commands
+
+1) Посмотреть где я                                                                    === pwd
+2) Создать папку                                                                       === mkdir part1
+3) Зайти в папку                                                                       === cd part1
+4) Создать 3 папки                                                                     === mkdir aa_1 aa_2 aa_3
+5) Зайти в любую папку                                                                 === cd aa_1
+6) Создать 5 файлов (3 txt, 2 json)                                                    === touch one.txt two.txt three.txt four.json five.json
+7) Создать 3 папки                                                                     === mkdir bb_1 bb_2 bb_3
+8. Вывести список содержимого папки                                                    === ls -la
+9) + Открыть любой txt файл                                                            === vim one.txt
+10) + написать туда что-нибудь, любой текст.                                           === INSERT 
+11) + сохранить и выйти.                                                               === Esc :wq
+12) Выйти из папки на уровень выше                                                     === cd ..
+—
+13) переместить любые 2 файла, которые вы создали, в любую другую папку.               === mv aa_1/one.txt aa_2/one.txt 
+                                                                                           mv aa_1/two.txt aa_2/two.txt
+
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку.               === cp aa_1/four.json aa_2/four.json 
+                                                                                           cp aa_1/five.json aa_2/five.json 
+15) Найти файл по имени                                                                === find . -name three.txt
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает. === tail -f three.txt
+17) вывести несколько первых строк из текстового файла                                 === head -n3 three.txt
+18) вывести несколько последних строк из текстового файла                              === tail -n3 
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает.     === less three.txt
+20) вывести дату и время                                                               === date 
+=========
+
+Задание *
+1) Отправить http запрос на сервер.
+http://162.55.220.72:5005/terminal-hw-request                                          === curl http://162.55.220.72:5005/terminal-hw-request 
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13          === $ which bash
+                                                                                           $ nano bash.sh    //создаем bash сценарий
+                                                                                            
+#! /usr/bin/bash                                                                                           
+mkdir part1
+cd part1
+mkdir aa_1 aa_2 aa_3
+cd aa_1
+touch one.txt two.txt three.txt four.json five.jsont
+mkdir bb_1 bb_2 bb_3
+ls -la
+mv ../aa_1/one.txt ../aa_2/one.txt
+
+
+                                                                                           
+
+                                                                                           
+=====================
+1) Посмотреть где я - pwd
+2) Создать папку - mkdir foldername
+3) Зайти в папку - cd foldername
